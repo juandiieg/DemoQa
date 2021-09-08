@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="fd67bc5bd239a0213a70ef25716601538aec9a9bb5f5fbe2e6d08bcd6834db49.html">Prueba Automatizaci&oacute;n</a></span>
+                > <span class="truncate-60"><a
+                    href="91a04f3dfa981a4520b94b7cb3db1580b8fa41031573cc92fece2d97e1948552.html">Como usuario quiero agregar registros en la tabla web </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-09-2021 20:58</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Prueba Automatización </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                            <div class="requirementNarrative">Background: El usuario ingresa a la web
+                                    <p></p>
+                            </div>
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e1762246d86409083207a4e42a6f3fbf3d6d474acb9b53db84a9b7e0f866e50b.html">Webtable
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="6cf51db8ae82262a2836007e8c99306f996bb3ff1e4792ae9c379210835c525d.html">Agregarregistro
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Como usuario quiero agregar registros en la tabla web
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="e7b799f17615640cea82db33b17c9c5e9fec56432ef6e2399c36dd169850b6fa.png" title=" Given ingreso a la plataforma demoqa" width="1366"/>
+                <img src="e7b799f17615640cea82db33b17c9c5e9fec56432ef6e2399c36dd169850b6fa.png" title=" Juan opens the Home page" width="1366"/>
+                <img src="0096baa6c3f92977b8c092eed61f4bb73bc888efceba598632f0c3ce40025739.png" title=" Juan opens the Home page (completed)" width="1366"/>
+                <img src="0096baa6c3f92977b8c092eed61f4bb73bc888efceba598632f0c3ce40025739.png" title=" Given ingreso a la plataforma demoqa (completed)" width="1366"/>
+                <img src="70839a7b80d640ce4e4b17e56f9fd7a072acd79b1be88173268782f35d617d74.png" title=" Given Ingreso al submodulo web tables" width="1366"/>
+                <img src="70839a7b80d640ce4e4b17e56f9fd7a072acd79b1be88173268782f35d617d74.png" title=" Juan enter module" width="1366"/>
+                <img src="70839a7b80d640ce4e4b17e56f9fd7a072acd79b1be88173268782f35d617d74.png" title=" Juan clicks on Bot&oacute;n elementos" width="1366"/>
+                <img src="70839a7b80d640ce4e4b17e56f9fd7a072acd79b1be88173268782f35d617d74.png" title=" Juan enter module (completed)" width="1366"/>
+                <img src="70839a7b80d640ce4e4b17e56f9fd7a072acd79b1be88173268782f35d617d74.png" title=" Given Ingreso al submodulo web tables (completed)" width="1366"/>
+                <img src="026ea4aac2db67d24a430c3419930e52a8072a67d00a269d3a6205da3cef1079.png" title=" When Ingreso los datos &quot;datos.xls&quot; para el registro" width="1366"/>
+                <img src="026ea4aac2db67d24a430c3419930e52a8072a67d00a269d3a6205da3cef1079.png" title=" Juan fill register" width="1366"/>
+                <img src="026ea4aac2db67d24a430c3419930e52a8072a67d00a269d3a6205da3cef1079.png" title=" Juan clicks on Boton tablas web" width="1366"/>
+                <img src="6cea6eafe5ef533455d917caf876723209c793bfe32e29056604702ad25f0b84.png" title=" Juan clicks on Boton tablas web (completed)" width="1366"/>
+                <img src="6cea6eafe5ef533455d917caf876723209c793bfe32e29056604702ad25f0b84.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro" width="1366"/>
+                <img src="0e91dd4b2ece34ab6d300dc27c04592b2cea4fccfbb099297a5ca8f037a399e4.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro (completed)" width="1366"/>
+                <img src="0e91dd4b2ece34ab6d300dc27c04592b2cea4fccfbb099297a5ca8f037a399e4.png" title=" Juan enters 'Juan' into Input primer nombre" width="1366"/>
+                <img src="fb3baf7f99a7faa6c9626b36ee193f3f71874553e1c21fb9824df982c70546d8.png" title=" Juan enters 'Juan' into Input primer nombre (completed)" width="1366"/>
+                <img src="fb3baf7f99a7faa6c9626b36ee193f3f71874553e1c21fb9824df982c70546d8.png" title=" Juan enters 'Perez' into Input primer nombre" width="1366"/>
+                <img src="8d64dbc8d4e6429a318687050b52e52d952030597e5f24926db97cbd31ffe2c2.png" title=" Juan enters 'Perez' into Input primer nombre (completed)" width="1366"/>
+                <img src="8d64dbc8d4e6429a318687050b52e52d952030597e5f24926db97cbd31ffe2c2.png" title=" Juan enters 'Rocetic23@12345.com' into Input primer nombre" width="1366"/>
+                <img src="bb69140d49170a0bc0433a2ba54bb5ed21a60f3e664d10457b844f35afac410a.png" title=" Juan enters 'Rocetic23@12345.com' into Input primer nombre (completed)" width="1366"/>
+                <img src="bb69140d49170a0bc0433a2ba54bb5ed21a60f3e664d10457b844f35afac410a.png" title=" Juan enters '21' into Input primer nombre" width="1366"/>
+                <img src="bb19e3cec22a535f58ee141723cfd490a5eb1ecd25121863b6008912e14af5ce.png" title=" Juan enters '21' into Input primer nombre (completed)" width="1366"/>
+                <img src="bb19e3cec22a535f58ee141723cfd490a5eb1ecd25121863b6008912e14af5ce.png" title=" Juan enters '1000' into Input primer nombre" width="1366"/>
+                <img src="30d1f038cc3beb757d619129a617ab9edfe41474fecf0877d89ad964e6fc8440.png" title=" Juan enters '1000' into Input primer nombre (completed)" width="1366"/>
+                <img src="30d1f038cc3beb757d619129a617ab9edfe41474fecf0877d89ad964e6fc8440.png" title=" Juan enters 'Antioquia' into Input primer nombre" width="1366"/>
+                <img src="79f67ec9bbf7a716bb9953878b8d119a5f5e3e34d5de40f20105f92fc09994e5.png" title=" Juan enters 'Antioquia' into Input primer nombre (completed)" width="1366"/>
+                <img src="79f67ec9bbf7a716bb9953878b8d119a5f5e3e34d5de40f20105f92fc09994e5.png" title=" Juan clicks on Bot&oacute;n submit" width="1366"/>
+                <img src="269cd782b90915ee46b8e4d7888d123194cbae35f8dcd6ccb22b4345952d7eaa.png" title=" Juan clicks on Bot&oacute;n submit (completed)" width="1366"/>
+                <img src="269cd782b90915ee46b8e4d7888d123194cbae35f8dcd6ccb22b4345952d7eaa.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro" width="1366"/>
+                <img src="3d6a6c31f694540a6893190ebc4f7edd5ceb9e2ed3154d57d748549e9d2a8647.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro (completed)" width="1366"/>
+                <img src="3d6a6c31f694540a6893190ebc4f7edd5ceb9e2ed3154d57d748549e9d2a8647.png" title=" Juan enters 'Robert' into Input primer nombre" width="1366"/>
+                <img src="4859bd40d5648c9f812602458f2e8118d49f8388d93f14302c71144590c3cc31.png" title=" Juan enters 'Robert' into Input primer nombre (completed)" width="1366"/>
+                <img src="4859bd40d5648c9f812602458f2e8118d49f8388d93f14302c71144590c3cc31.png" title=" Juan enters 'Lopez' into Input primer nombre" width="1366"/>
+                <img src="18456dd3a68a41845d6c50199bb335bd0a0ab992e84a0c1640c965acac7c165f.png" title=" Juan enters 'Lopez' into Input primer nombre (completed)" width="1366"/>
+                <img src="18456dd3a68a41845d6c50199bb335bd0a0ab992e84a0c1640c965acac7c165f.png" title=" Juan enters 'Rtiqo3@12345.com' into Input primer nombre" width="1366"/>
+                <img src="bc7b4df1e869be80270cc2af1852d9fd986fd94dfb2c45079690ebc616e1f533.png" title=" Juan enters 'Rtiqo3@12345.com' into Input primer nombre (completed)" width="1366"/>
+                <img src="bc7b4df1e869be80270cc2af1852d9fd986fd94dfb2c45079690ebc616e1f533.png" title=" Juan enters '21' into Input primer nombre" width="1366"/>
+                <img src="1d7a3e4433d05a2067253a1fbb73ecf90e0acd104440e29cdd146be38d53bc6c.png" title=" Juan enters '21' into Input primer nombre (completed)" width="1366"/>
+                <img src="1d7a3e4433d05a2067253a1fbb73ecf90e0acd104440e29cdd146be38d53bc6c.png" title=" Juan enters '1000' into Input primer nombre" width="1366"/>
+                <img src="c55d2ed32ca6773bc82612f746d58dacac758a0cd4c652b64554495903249b71.png" title=" Juan enters '1000' into Input primer nombre (completed)" width="1366"/>
+                <img src="c55d2ed32ca6773bc82612f746d58dacac758a0cd4c652b64554495903249b71.png" title=" Juan enters 'Cundimarca' into Input primer nombre" width="1366"/>
+                <img src="22f701a63d685bb3393ab31cc70f045ff0eadef161c2cc326f1df30c5264d797.png" title=" Juan enters 'Cundimarca' into Input primer nombre (completed)" width="1366"/>
+                <img src="22f701a63d685bb3393ab31cc70f045ff0eadef161c2cc326f1df30c5264d797.png" title=" Juan clicks on Bot&oacute;n submit" width="1366"/>
+                <img src="b866ad0ea4cacef178bf31ed88011ec350559ec3aa17484c91f89e09c30ac9ef.png" title=" Juan clicks on Bot&oacute;n submit (completed)" width="1366"/>
+                <img src="b866ad0ea4cacef178bf31ed88011ec350559ec3aa17484c91f89e09c30ac9ef.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro" width="1366"/>
+                <img src="958e14399794582f06f389eeca02b4cb3c72c0f4fc491d43360579a3074fd62e.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro (completed)" width="1366"/>
+                <img src="958e14399794582f06f389eeca02b4cb3c72c0f4fc491d43360579a3074fd62e.png" title=" Juan enters 'Camila' into Input primer nombre" width="1366"/>
+                <img src="e20042a689c8147345e1a2d0eb22b9710d7c87d1e787f6118e64d98271b5e37f.png" title=" Juan enters 'Camila' into Input primer nombre (completed)" width="1366"/>
+                <img src="e20042a689c8147345e1a2d0eb22b9710d7c87d1e787f6118e64d98271b5e37f.png" title=" Juan enters 'Diaz' into Input primer nombre" width="1366"/>
+                <img src="3062d60dff7a5ccba304e81e907d54523135289a4c01a50c2340a9d7f508f526.png" title=" Juan enters 'Diaz' into Input primer nombre (completed)" width="1366"/>
+                <img src="3062d60dff7a5ccba304e81e907d54523135289a4c01a50c2340a9d7f508f526.png" title=" Juan enters 'Camit4@12345.com' into Input primer nombre" width="1366"/>
+                <img src="a941442f31c12150c9b5f3f439236c39ab567b0c5a0e5ef597a64d52e55207b2.png" title=" Juan enters 'Camit4@12345.com' into Input primer nombre (completed)" width="1366"/>
+                <img src="a941442f31c12150c9b5f3f439236c39ab567b0c5a0e5ef597a64d52e55207b2.png" title=" Juan enters '21' into Input primer nombre" width="1366"/>
+                <img src="38eba49e2d4b8035b4a0f8b9222995298f836a4e8d523840494f4eea602189aa.png" title=" Juan enters '21' into Input primer nombre (completed)" width="1366"/>
+                <img src="38eba49e2d4b8035b4a0f8b9222995298f836a4e8d523840494f4eea602189aa.png" title=" Juan enters '1000' into Input primer nombre" width="1366"/>
+                <img src="43ddadb4a1ac949b443b4627c59f771b7c75c1943aaa900b2c53f16732e56547.png" title=" Juan enters '1000' into Input primer nombre (completed)" width="1366"/>
+                <img src="43ddadb4a1ac949b443b4627c59f771b7c75c1943aaa900b2c53f16732e56547.png" title=" Juan enters 'Antioquia' into Input primer nombre" width="1366"/>
+                <img src="bbee0775d70171fb91a6637b9c46bed2fa5639a135d4d4d88c9e0b1b39fb2e22.png" title=" Juan enters 'Antioquia' into Input primer nombre (completed)" width="1366"/>
+                <img src="bbee0775d70171fb91a6637b9c46bed2fa5639a135d4d4d88c9e0b1b39fb2e22.png" title=" Juan clicks on Bot&oacute;n submit" width="1366"/>
+                <img src="207b2d05c36c0e4750d2653df0b34a32a41a68ec770a9bddf14ee9e65d3735c2.png" title=" Juan clicks on Bot&oacute;n submit (completed)" width="1366"/>
+                <img src="207b2d05c36c0e4750d2653df0b34a32a41a68ec770a9bddf14ee9e65d3735c2.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro" width="1366"/>
+                <img src="ea420feac34244cfc5a54c15e216a87d0c94f7f0b8305c91755788e7d90bb70f.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro (completed)" width="1366"/>
+                <img src="ea420feac34244cfc5a54c15e216a87d0c94f7f0b8305c91755788e7d90bb70f.png" title=" Juan enters 'Andres' into Input primer nombre" width="1366"/>
+                <img src="f09b21604a40584baa13d493d42b2425b845970feed08fce6981e99f1ff3520a.png" title=" Juan enters 'Andres' into Input primer nombre (completed)" width="1366"/>
+                <img src="f09b21604a40584baa13d493d42b2425b845970feed08fce6981e99f1ff3520a.png" title=" Juan enters 'Fajardo' into Input primer nombre" width="1366"/>
+                <img src="5620301aaae4f08a464529b3f741f3252d99823ecbeac54c1760f6d0c8e2d6b1.png" title=" Juan enters 'Fajardo' into Input primer nombre (completed)" width="1366"/>
+                <img src="5620301aaae4f08a464529b3f741f3252d99823ecbeac54c1760f6d0c8e2d6b1.png" title=" Juan enters 'An4tico5@12345.com' into Input primer nombre" width="1366"/>
+                <img src="a09db75a1c4f3b8699ef339531e428ebf6cb519b8ed2ff84f71c639bc7727da1.png" title=" Juan enters 'An4tico5@12345.com' into Input primer nombre (completed)" width="1366"/>
+                <img src="a09db75a1c4f3b8699ef339531e428ebf6cb519b8ed2ff84f71c639bc7727da1.png" title=" Juan enters '21' into Input primer nombre" width="1366"/>
+                <img src="1a41af5453080e84d6afbc52a452f5b0d1f35bf837d211274696317eeeb623fe.png" title=" Juan enters '21' into Input primer nombre (completed)" width="1366"/>
+                <img src="1a41af5453080e84d6afbc52a452f5b0d1f35bf837d211274696317eeeb623fe.png" title=" Juan enters '1000' into Input primer nombre" width="1366"/>
+                <img src="e1d2e1724bea57beff59c9d489c9ad648f126a25b45b10c45b7626421810a4f2.png" title=" Juan enters '1000' into Input primer nombre (completed)" width="1366"/>
+                <img src="e1d2e1724bea57beff59c9d489c9ad648f126a25b45b10c45b7626421810a4f2.png" title=" Juan enters 'Cundimarca' into Input primer nombre" width="1366"/>
+                <img src="2065fc29678314ff0ac66bc64e4448ae7b7f2bcf4451f0d9ea6cc2eed0f8bf2f.png" title=" Juan enters 'Cundimarca' into Input primer nombre (completed)" width="1366"/>
+                <img src="2065fc29678314ff0ac66bc64e4448ae7b7f2bcf4451f0d9ea6cc2eed0f8bf2f.png" title=" Juan clicks on Bot&oacute;n submit" width="1366"/>
+                <img src="6b929073b36843236c0d1656f77302546f7f7bedf2ee676bef0bd9c869b3a67c.png" title=" Juan clicks on Bot&oacute;n submit (completed)" width="1366"/>
+                <img src="6b929073b36843236c0d1656f77302546f7f7bedf2ee676bef0bd9c869b3a67c.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro" width="1366"/>
+                <img src="e6fbec4f95db37635966feaa949418c65cefe54c5cc00cc361473c237a049056.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro (completed)" width="1366"/>
+                <img src="e6fbec4f95db37635966feaa949418c65cefe54c5cc00cc361473c237a049056.png" title=" Juan enters 'Andrea' into Input primer nombre" width="1366"/>
+                <img src="b4a607db7b2b22b902e32004b10c62974815da1b6ea63c4452214aa6178ac140.png" title=" Juan enters 'Andrea' into Input primer nombre (completed)" width="1366"/>
+                <img src="b4a607db7b2b22b902e32004b10c62974815da1b6ea63c4452214aa6178ac140.png" title=" Juan enters 'Arenita' into Input primer nombre" width="1366"/>
+                <img src="815440ff597cf9a1f49b0634d9b33d51e37382604b58a0147ef48830f95d9e2c.png" title=" Juan enters 'Arenita' into Input primer nombre (completed)" width="1366"/>
+                <img src="815440ff597cf9a1f49b0634d9b33d51e37382604b58a0147ef48830f95d9e2c.png" title=" Juan enters 'An3retico6@12345.com' into Input primer nombre" width="1366"/>
+                <img src="9c097a8b8c9817d04f78c88dd03908d5bbcd0bab2dddcc927e8b7d0bb1aad974.png" title=" Juan enters 'An3retico6@12345.com' into Input primer nombre (completed)" width="1366"/>
+                <img src="9c097a8b8c9817d04f78c88dd03908d5bbcd0bab2dddcc927e8b7d0bb1aad974.png" title=" Juan enters '21' into Input primer nombre" width="1366"/>
+                <img src="c892cfcca674f8fe09f3738229cd50aa94dfa4868e6b44c72c9b40b92f0c3bbe.png" title=" Juan enters '21' into Input primer nombre (completed)" width="1366"/>
+                <img src="c892cfcca674f8fe09f3738229cd50aa94dfa4868e6b44c72c9b40b92f0c3bbe.png" title=" Juan enters '1000' into Input primer nombre" width="1366"/>
+                <img src="d7a6ca980b18163646ad0746c498d71b91654b3f5ba2d0023004eb4b759ea818.png" title=" Juan enters '1000' into Input primer nombre (completed)" width="1366"/>
+                <img src="d7a6ca980b18163646ad0746c498d71b91654b3f5ba2d0023004eb4b759ea818.png" title=" Juan enters 'Antioquia' into Input primer nombre" width="1366"/>
+                <img src="33f4720ce2c7abadf8853388241bdf110f641114a64a6ab3d97123954527f6ca.png" title=" Juan enters 'Antioquia' into Input primer nombre (completed)" width="1366"/>
+                <img src="33f4720ce2c7abadf8853388241bdf110f641114a64a6ab3d97123954527f6ca.png" title=" Juan clicks on Bot&oacute;n submit" width="1366"/>
+                <img src="ae380fe280535f80ceeb45e5879e19551929f8c85cf43fba01c7d112257c00ad.png" title=" Juan clicks on Bot&oacute;n submit (completed)" width="1366"/>
+                <img src="ae380fe280535f80ceeb45e5879e19551929f8c85cf43fba01c7d112257c00ad.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro" width="1366"/>
+                <img src="3f83c734286a1905b999f1ef34d99837781d520a406bac74c758cf4ec2f711f4.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro (completed)" width="1366"/>
+                <img src="3f83c734286a1905b999f1ef34d99837781d520a406bac74c758cf4ec2f711f4.png" title=" Juan enters 'Carlos' into Input primer nombre" width="1366"/>
+                <img src="7574b51ab0d539613ef49a11cfac39f90942bf10b704abbbcb11f3577f2abc9e.png" title=" Juan enters 'Carlos' into Input primer nombre (completed)" width="1366"/>
+                <img src="7574b51ab0d539613ef49a11cfac39f90942bf10b704abbbcb11f3577f2abc9e.png" title=" Juan enters 'Esponja' into Input primer nombre" width="1366"/>
+                <img src="8418766b083c32888322bfaa5f3f5696907dee3705e48211326bfbdb112755ef.png" title=" Juan enters 'Esponja' into Input primer nombre (completed)" width="1366"/>
+                <img src="8418766b083c32888322bfaa5f3f5696907dee3705e48211326bfbdb112755ef.png" title=" Juan enters 'Car2oco7@12345.com' into Input primer nombre" width="1366"/>
+                <img src="fb82b9c0e62465f0d030a064b795e216591d6aa5a65d31d20f097e38f997fd1f.png" title=" Juan enters 'Car2oco7@12345.com' into Input primer nombre (completed)" width="1366"/>
+                <img src="fb82b9c0e62465f0d030a064b795e216591d6aa5a65d31d20f097e38f997fd1f.png" title=" Juan enters '21' into Input primer nombre" width="1366"/>
+                <img src="83da1cd8e466eea2bc43cda8b28d35002759132a3ba7400a49735969136396c8.png" title=" Juan enters '21' into Input primer nombre (completed)" width="1366"/>
+                <img src="83da1cd8e466eea2bc43cda8b28d35002759132a3ba7400a49735969136396c8.png" title=" Juan enters '1000' into Input primer nombre" width="1366"/>
+                <img src="9dff4444da5f6f66491b9a9e8051dd1eb5bfeff290c22132d7db2dda97b87a54.png" title=" Juan enters '1000' into Input primer nombre (completed)" width="1366"/>
+                <img src="9dff4444da5f6f66491b9a9e8051dd1eb5bfeff290c22132d7db2dda97b87a54.png" title=" Juan enters 'Cundimarca' into Input primer nombre" width="1366"/>
+                <img src="f06959e1b7798c3a59f2b52b7e26f0654d469a1e3b557b194c1c80d01df23d49.png" title=" Juan enters 'Cundimarca' into Input primer nombre (completed)" width="1366"/>
+                <img src="f06959e1b7798c3a59f2b52b7e26f0654d469a1e3b557b194c1c80d01df23d49.png" title=" Juan clicks on Bot&oacute;n submit" width="1366"/>
+                <img src="177a0686271506c487aaac93d4eefba6f82cfdd560c1c956a592f5bee598f8c5.png" title=" Juan clicks on Bot&oacute;n submit (completed)" width="1366"/>
+                <img src="177a0686271506c487aaac93d4eefba6f82cfdd560c1c956a592f5bee598f8c5.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro" width="1366"/>
+                <img src="698f8dc78eaa95e59958396d6f0b97bf605fbdfd3df05e5a958412cce45cb054.png" title=" Juan clicks on Bot&oacute;n a&ntilde;adir nuevo registro (completed)" width="1366"/>
+                <img src="698f8dc78eaa95e59958396d6f0b97bf605fbdfd3df05e5a958412cce45cb054.png" title=" Juan enters 'Mario' into Input primer nombre" width="1366"/>
+                <img src="70a72f90d65799d8e946af69b3f66018d36b7abfb50510c80f28dfad6064bd5e.png" title=" Juan enters 'Mario' into Input primer nombre (completed)" width="1366"/>
+                <img src="70a72f90d65799d8e946af69b3f66018d36b7abfb50510c80f28dfad6064bd5e.png" title=" Juan enters 'Lola' into Input primer nombre" width="1366"/>
+                <img src="9fe1c03229cb49806b88e10f18474a3ee7940c257961714c57ff01b418a02ea0.png" title=" Juan enters 'Lola' into Input primer nombre (completed)" width="1366"/>
+                <img src="9fe1c03229cb49806b88e10f18474a3ee7940c257961714c57ff01b418a02ea0.png" title=" Juan enters 'Ma2ioico8@12345.com' into Input primer nombre" width="1366"/>
+                <img src="9bf8d8346f4b7957553adea6398ade622ff39afb1e5cdb7e25b27b73f96ba7d6.png" title=" Juan enters 'Ma2ioico8@12345.com' into Input primer nombre (completed)" width="1366"/>
+                <img src="9bf8d8346f4b7957553adea6398ade622ff39afb1e5cdb7e25b27b73f96ba7d6.png" title=" Juan enters '21' into Input primer nombre" width="1366"/>
+                <img src="5f754222a8b3368915a5c4b21866186a8ffea2be7cf617eaa7bdd23547cae7fe.png" title=" Juan enters '21' into Input primer nombre (completed)" width="1366"/>
+                <img src="5f754222a8b3368915a5c4b21866186a8ffea2be7cf617eaa7bdd23547cae7fe.png" title=" Juan enters '1000' into Input primer nombre" width="1366"/>
+                <img src="84b18f43f30f855a7d61ef6f36cf6974edebc91ef2cf53ae96dec565aafff5a8.png" title=" Juan enters '1000' into Input primer nombre (completed)" width="1366"/>
+                <img src="84b18f43f30f855a7d61ef6f36cf6974edebc91ef2cf53ae96dec565aafff5a8.png" title=" Juan enters 'Antioquia' into Input primer nombre" width="1366"/>
+                <img src="3ac713e9d5638f1a1f2ff48ba9a69603bda0007f562639e6c571354ca1fdfb18.png" title=" Juan enters 'Antioquia' into Input primer nombre (completed)" width="1366"/>
+                <img src="3ac713e9d5638f1a1f2ff48ba9a69603bda0007f562639e6c571354ca1fdfb18.png" title=" Juan clicks on Bot&oacute;n submit" width="1366"/>
+                <img src="1445b2d3f29a23cada10737571fee9457fc56231cc8d0fec57c7941814563e04.png" title=" Juan clicks on Bot&oacute;n submit (completed)" width="1366"/>
+                <img src="1445b2d3f29a23cada10737571fee9457fc56231cc8d0fec57c7941814563e04.png" title=" Juan fill register (completed)" width="1366"/>
+                <img src="1445b2d3f29a23cada10737571fee9457fc56231cc8d0fec57c7941814563e04.png" title=" When Ingreso los datos &quot;datos.xls&quot; para el registro (completed)" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Agrego el registro en la tabla" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Juan validate register" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible (completed)" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible (completed)" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible (completed)" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible (completed)" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible (completed)" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible (completed)" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Campo email de la tabla should be an element that is visible (completed)" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Juan validate register (completed)" width="1366"/>
+                <img src="fd621fef867f8344f37369692fedfc4db47b8fe42157c4487ece62e3ee18de3b.png" title=" Then Agrego el registro en la tabla (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.30</span>
+</div>
+</body>
+</html>

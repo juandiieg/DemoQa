@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/main/resources/features/prueba.feature",
         glue = "dSteps",
-        tags = "@webTable",
+        tags = "@agregarRegistro",
         snippets = SnippetType.CAMELCASE
 )
 public class runnerPrueba {

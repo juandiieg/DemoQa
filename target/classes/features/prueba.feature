@@ -6,8 +6,7 @@ Feature: Prueba automatización
   @webTable @agregarRegistro
   Scenario: Como usuario quiero agregar registros en la tabla web
     Given Ingreso al submodulo web tables
-    When Selecciono la opcion agregar registro
-    And Ingreso los datos para el registro
+    When  Ingreso los datos "datos.xls" para el registro
     Then Agrego el registro en la tabla
 
   @webTable @eliminarRegistro
